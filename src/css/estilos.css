@@ -1,0 +1,153 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background-image: url('../imgs/background.jpeg');
+    background-size: cover;
+
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-position: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.carros {
+    display: flex;
+    gap: 30px;
+    padding: 30px 0;
+}
+
+.cartao-carro {
+    display: none;
+    max-width: 360px;
+    border-radius: 10px;
+
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.cartao-carro.aberto {
+    display: block;
+}
+
+.cartao-carro img {
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+}
+
+.cartao-carro .cartao-topo {
+    padding: 30px 40px 0;
+}
+
+.cartao-carro .nome {
+   margin-bottom: 5px;
+}
+
+.cartao-carro .motor {
+    background-color: #ffffff;
+    font-size:  12px;
+    opacity: 0.83;
+    border-radius: 10px;
+    padding: 2px 10px;
+}
+
+.cartao-carro .detalhes {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cartao-carro .cartao-informacoes {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 30px 50px;
+    margin-top: -70px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.cartao-carro .cartao-informacoes h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid black;
+}
+
+.cartao-carro .cartao-informacoes .descricao {
+    padding: 0 10px;
+    font-size: 15px;
+    max-height: 150px;
+    overflow-y: scroll;
+}
+
+.zonda-hp-barchetta {
+    background-color: rgb(39, 39, 211);
+}
+
+.zonda-r {
+    background-color: #4d4d4d;
+}
+
+.huayra {
+    background-color: #5a1b1b;
+}
+
+.utopia {
+    background-color: #b6b093;
+}
+
+.imola {
+    background-color: #4d4d4d;
+}
+
+.listagem {
+    max-width: 200px;
+}
+
+.listagem .carro img {
+    width: 25%;
+    margin-right: 30px;
+    margin-left: 10px;
+}
+
+.listagem .carro {
+    background-color: #6b727a;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    border-radius: 30px;
+    min-height: 70px;
+    
+    transition: 0.15 ease-in-out;
+}
+
+.listagem .carro:hover {
+    transform: scale(1.1);
+}
+
+.listagem .carro span {
+    padding-right: 25vh;
+}
+
+.listagem .carro.ativo {
+    background-color: #302d2d;
+}
